@@ -92,7 +92,11 @@ $(document).ready(function(e) {
 				var Segunda = document.getElementByName("SOpcion").value;
 				var Tercera = document.getElementByName("TOpcion").value;
 				var Cuarta = document.getElementByName("COpcion").value;
-				
+				alert (Quien);
+				alert (Primera);
+				alert (Segunda);
+				alert (Tercera);
+				alert (Cuarta);
 				guardar(Quien, Primera,Segunda,Tercera,Cuarta);
 	//alert ("opciones" + Quien);
 				break;	
