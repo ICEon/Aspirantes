@@ -79,10 +79,10 @@ $(document).ready(function(e) {
 	});
 
 
-	$('.Send').tap(function(){
+	$('.Actualizar').tap(function(){
 		var formulario = $(this).parents('form');
 
-	switch(formulario.attr('Actualizar'))
+	switch(formulario.attr('name'))
 	{
 		
 			case 'opciones':
