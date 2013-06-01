@@ -31,7 +31,7 @@ function loginConn(reg){
 	datos = "registro="+reg;
 	$.ajax({
 		type: "POST",
-		url: "http://cbtis16.net46.net/hola.php",
+		url: "http://cbtis16.net46.net/buscar.php",
 		data: datos
 	}).done(function(msg) {
 
