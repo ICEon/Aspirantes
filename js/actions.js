@@ -48,7 +48,13 @@ $('#devic table td').eq(13).text(Datos['SOpcion']);
 $('#devic table td').eq(15).text(Datos['TOpcion']);
 $('#devic table td').eq(17).text(Datos['COpcion']);
 
-	});
+	})
+	
+	
+.fail(function() { alert("error"); })
+
+	
+	;
 }
 
 
