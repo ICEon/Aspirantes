@@ -37,7 +37,7 @@ alert (reg);
 
 var Datos = JSON.parse (msg);
 
-
+alert (Datos['Nombre']);
 $('#devic table td').eq(1).text(Datos['Nombre']);
 $('#devic table td').eq(3).text(Datos['ApellidoP']);
 $('#devic table td').eq(5).text(Datos['ApellidoM']);
