@@ -36,7 +36,7 @@ function loginConn(reg){
 	}).done(function(msg) {
 
 var Datos = JSON.parse (msg);
-
+alert (msg);
 
 $('#devic table td').eq(1).text(Datos['Nombre']);
 $('#devic table td').eq(3).text(Datos['ApellidoP']);
