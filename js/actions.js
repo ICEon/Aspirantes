@@ -7,21 +7,24 @@ $('div.reg:contains('+b+')').show();
 		}, 500);
 }
 
-function guardar(Q,P,S,T,C){
-alert (Q+P+S+T+C);
-//	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
-//	$.ajax({
-//		type: "POST",
-//		url: "http://cbtis16.net46.net/guardar.php",
-//		data: datos
-//	}).done(function(msg) {
-
-//alert ("Opciones Guardadas");
+function guardarOpciones(Q, P, S, T, C){
 
 
 
+	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
+	$.ajax({
+		type: "POST",
+		url: "http://cbtis16.net46.net/guardar.php",
+		data: datos
+	}).done(function(msg) {
 
-//	});
+alert ("Opciones Guardadas");
+
+
+
+
+	});
+
 }
 
 
@@ -39,7 +42,7 @@ var n=msg.lastIndexOf("}")+1;
 msg = msg.slice(0,n);
 alert (msg);
 var Datos = JSON.parse (msg);
-//alert (Datos['Nombre']);
+
 $('#devic table td').eq(1).text(Datos['Nombre']);
 $('#devic table td').eq(3).text(Datos['ApellidoP']);
 $('#devic table td').eq(5).text(Datos['ApellidoM']);
@@ -51,8 +54,6 @@ $('#devic table td').eq(15).text(Datos['COpcion']);
 
 	});
 }
-
-
 $(document).ready(function(e) {
 
 
@@ -66,47 +67,31 @@ $(document).ready(function(e) {
 	{
 		
 			case 'encontrar':
-			
-				var registro = formulario.children('input:eq(0)').val();
 
+			var registro = formulario.children('input:eq(0)').val();
 				loginConn(registro);
 	
 				break;	
 				
-
-
-		}
-	});
-
-
-	$('.Actualizar').tap(function(){
-		var formulario = $(this).parents('form');
-
-	switch(formulario.attr('name'))
-	{
-		
 			case 'opciones':
-			
-		var Quien = document.getElementById("registro").value;
-				var Primera = document.getElementByName("POpcion").value;
-				var Segunda = document.getElementByName("SOpcion").value;
-				var Tercera = document.getElementByName("TOpcion").value;
-				var Cuarta = document.getElementByName("COpcion").value;
-				alert (Quien);
-				alert (Primera);
-				alert (Segunda);
-				alert (Tercera);
-				alert (Cuarta);
-				guardar(Quien, Primera,Segunda,Tercera,Cuarta);
-	//alert ("opciones" + Quien);
-				break;	
-				
 
+                var Quien =  $("#registro").val();
+
+		var Primera = $("#POpcion").val();
+				var Segunda = $("#SOpcion").val();
+						var Tercera = $("#TOpcion").val();
+								var Cuarta = $("#COpcion").val();
+								
+
+				guardarOpciones(Quien, Primera, Segunda, Tercera, Cuarta);
+
+				break;	
 
 		}
 	});
-				
-	
+
+
+			
 
 
 
