@@ -36,7 +36,7 @@ function loginConn(reg){
 	}).done(function(msg) {
 
 var n=str.lastIndexOf("}")+1;
-msg=msg.slice(0,);
+msg=msg.slice(0,n);
 alert (msg);
 //var Datos = JSON.parse (msg);
 //alert (Datos);
