@@ -88,13 +88,13 @@ $(document).ready(function(e) {
 			case 'opciones':
 			
 		var Quien = document.getElementById("registro").value;
-				//var Primera = document.getElementByName("POpcion").value;
-				//var Segunda = document.getElementByName("SOpcion").value;
-				//var Tercera = document.getElementByName("TOpcion").value;
-			//	var Cuarta = document.getElementByName("COpcion").value;
+				var Primera = document.getElementByName("POpcion").value;
+				var Segunda = document.getElementByName("SOpcion").value;
+				var Tercera = document.getElementByName("TOpcion").value;
+				var Cuarta = document.getElementByName("COpcion").value;
 				
-				//guardar(Quien, Primera,Segunda,Tercera,Cuarta);
-	alert ("opciones" + Quien);
+				guardar(Quien, Primera,Segunda,Tercera,Cuarta);
+	//alert ("opciones" + Quien);
 				break;	
 				
 
