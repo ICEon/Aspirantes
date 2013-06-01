@@ -9,7 +9,7 @@ $('div.reg:contains('+b+')').show();
 
 function guardarOpciones(Q, P, S, T, C){
 
-
+alert ("HERE");
 
 	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
 	$.ajax({
@@ -82,7 +82,7 @@ $(document).ready(function(e) {
 						var Tercera = $("#TOpcion").val();
 								var Cuarta = $("#COpcion").val();
 								
-
+alert (Cuarta);
 				guardarOpciones(Quien, Primera, Segunda, Tercera, Cuarta);
 
 				break;	
