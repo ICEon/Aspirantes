@@ -9,7 +9,7 @@ $('div.reg:contains('+b+')').show();
 
 function guardarOpciones(Q, P, S, T, C){
 
-alert ("HERE");
+
 
 	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
 	$.ajax({
@@ -18,7 +18,7 @@ alert ("HERE");
 		data: datos
 	}).done(function(msg) {
 
-alert (msg);
+alert ("Opciones Actulaizadas");
 
 
 
@@ -74,7 +74,7 @@ $(document).ready(function(e) {
 				break;	
 				
 			case 'opciones':
-alert("op");
+
                 var Quien =  $("#registro").val();
 
 		var Primera = $("#POpcion").val();
