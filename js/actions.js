@@ -9,7 +9,7 @@ $('div.reg:contains('+b+')').show();
 
 function guardar(Q,P,S,T,C){
 
-	datos = "Quien="+Q+"Primera="+P+"Segunda="+S+"Tercera="+T+"Cuarta="+C;
+	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
 	$.ajax({
 		type: "POST",
 		url: "http://cbtis16.net46.net/guardar.php",
@@ -27,11 +27,11 @@ alert ("Opciones Guardadas");
 
 
 function loginConn(reg){
-alert (reg);
+
 	datos = "registro="+reg;
 	$.ajax({
 		type: "POST",
-		url: "http://cbtis16.net46.net/buscar.php",
+		url: "192.168.1.69/buscar.php",
 		data: datos
 	}).done(function(msg) {
 
@@ -67,7 +67,7 @@ $(document).ready(function(e) {
 			case 'encontrar':
 			
 				var registro = formulario.children('input:eq(0)').val();
-				alert (registro);
+
 				loginConn(registro);
 	
 				break;	
