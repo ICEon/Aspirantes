@@ -80,28 +80,7 @@ $(document).ready(function(e) {
 
 
 
-					$('.Actualizar').tap(function(){
-		var formulario = $(this).parents('form');
-
-	switch(formulario.attr('name'))
-	{
-		
-			case 'opciones':
-			
-				var Quien = document.getElementById("Registro").value;
-				var Primera = document.getElementByName("POpcion").value;
-				var Segunda = document.getElementByName("SOpcion").value;
-				var Tercera = document.getElementByName("TOpcion").value;
-				var Cuarta = document.getElementByName("COpcion").value;
 				
-				guardar(Quien, Primera,Segunda,Tercera,Cuarta);
-	
-				break;	
-				
-
-
-		}
-	});
 	
 
 
