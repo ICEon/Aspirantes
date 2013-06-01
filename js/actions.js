@@ -34,8 +34,9 @@ function loginConn(reg){
 		url: "http://cbtis16.net46.net/buscar.php",
 		data: datos
 	}).done(function(msg) {
-
+var Datos = JSON.parse (msg);
 alert (msg);
+alert (Datos);
 	});
 }
 
