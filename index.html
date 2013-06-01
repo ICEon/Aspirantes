@@ -1,0 +1,418 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="js/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="js/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+ <link rel="stylesheet" href="css/mi_estilo.css" />
+
+<script src="phonegap.js"></script>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/actions.js" type="text/javascript"></script>
+
+</head> 
+<body> 
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Seleccion de especialidad</h1>
+	</div>
+	<div data-role="content">
+    	<form name="encontrar">	
+            <input type="text" id="registro" placeholder="Numero de Registro" /><br>
+            <a data-role="button"  class="Send">
+                Enviar
+            </a>
+        </form>
+        
+        
+        <div id="devic">
+<div class="toolbar">
+                    <h1>Aspirante</h1>
+                    
+                </div>
+<div class="scroll">
+<center>
+<table>
+<tr><td class="desc">Nombre</td><td class="disp"></td></tr>
+<tr><td class="desc">Apellido Paterno:</td><td class="disp"></td></tr>
+<tr><td class="desc">Apellido Materno:</td><td class="disp"></td></tr>
+<tr><td class="desc">Secundaria:</td><td class="disp"></td></tr>
+<tr><td class="desc">Primera Opcion:</td><td class="disp"></td></tr>
+<tr><td class="desc">Segunda Opcion:</td><td class="disp"></td></tr>
+<tr><td class="desc">Tercera Opcion:</td><td class="disp"></td></tr>
+<tr><td class="desc">Cuarta Opcion:</td><td class="disp"></td></tr>
+</table>
+</center>
+
+</div>
+
+</div>
+
+	</div>
+
+    	<form name="opciones">	
+<table align="center">
+<tr>
+<td align="center">
+Primera Opcion
+</td>
+<td align="center">
+Segunda Opcion
+</td>
+<td align="center">
+Tercera Opcion
+</td>
+<td align="center">
+Cuarta Opcion
+</td>
+</tr>
+<tr>
+<td><select name="POpcion">
+  <option value="Electricidad">Electricidad</option>
+  <option value="Mecanica Industrial">Mecanica Industrial</option>
+  <option value="Programacion">Programacion</option>
+  <option value="Administracion">Administracion</option>
+</select>
+</td>
+<td><select name="SOpcion">
+  <option value="Electricidad">Electricidad</option>
+  <option value="Mecanica Industrial">Mecanica Industrial</option>
+  <option value="Programacion">Programacion</option>
+  <option value="Administracion">Administracion</option>
+</select>
+</td>
+<td><select name="TOpcion">
+  <option value="Electricidad">Electricidad</option>
+  <option value="Mecanica Industrial">Mecanica Industrial</option>
+  <option value="Programacion">Programacion</option>
+  <option value="Administracion">Administracion</option>
+</select>
+</td>
+<td><select name="COpcion">
+  <option value="Electricidad">Electricidad</option>
+  <option value="Mecanica Industrial">Mecanica Industrial</option>
+  <option value="Programacion">Programacion</option>
+  <option value="Administracion">Administracion</option>
+</select>
+</td>
+
+
+
+</tr>
+</table>
+            <a data-role="button"  class="Actualizar">
+                Enviar
+            </a>
+        </form>
+
+        <a href="#busqueda"> Buscar Aspirante </a>
+</div>
+
+
+
+<br>
+<div data-role="page" id="busqueda">
+           
+<input type="text"  id="campo"  onKeyUp="Reacciona(this)" placeholder="Nombre del aspirante">
+   <div class="reg">001 MARTINEZ ROJAS SALVADOR</div>
+<div class="reg">002 ROJAS BARBOZA DELFINO</div>
+<div class="reg">003 CAZARES ROJAS MARIA FATIMA</div>
+<div class="reg">004 MORALES JIMANEZ CHRISTIAN</div>
+<div class="reg">005 ROMERO ORZUNA JULIO CESAR</div>
+<div class="reg">006 JIMENEZ CORDERO WENDY</div>
+<div class="reg">007 ESTRADA GONZALEZ LUIS ALEJANDRO</div>
+<div class="reg">008 AGUILAR JUAREZ MARIA FERNANDA</div>
+<div class="reg">009 RAMIREZ CORONA JOEL ALEXIS</div>
+<div class="reg">010 CAMPECHE GONZALEZ URIEL</div>
+<div class="reg">011 ORTIZ ESCOBAR ALEXIS</div>
+<div class="reg">012 PANI MORALES GABRIELA</div>
+<div class="reg">013 SAMPEDRO AMADOR MARCOS</div>
+<div class="reg">014 ROMERO HERNANDEZ SERGIO</div>
+<div class="reg">015 POBLANO PACHECO JORGE DANIEL</div>
+<div class="reg">016 DEL RIO GONZALEZ XIMENA</div>
+<div class="reg">017 LARIOS SANCHEZ DAVID</div>
+<div class="reg">018 CEBREROS GUZMAN GABRIELA GUADALUPE</div>
+<div class="reg">019 BARBOZA GOMEZ DANIEL ABSALON</div>
+<div class="reg">020 TLACALTECH HILLENWECK ULISES</div>
+<div class="reg">021 RAMOS CASSELYN EDSON</div>
+<div class="reg">022 RINCON MORENO CARLOS</div>
+<div class="reg">023 RAMOS CASSELYN EDWIN</div>
+<div class="reg">024 GUEVARA CUAUTLE MAURICIO</div>
+<div class="reg">025 MEDINA PEREZ ALEXIS</div>
+<div class="reg">026 ARELLANO TREJO HATZIRI JASHUI</div>
+<div class="reg">027 CASTELLANOS VAZQUEZ CARLOS</div>
+<div class="reg">028 BALTAZAR TELIZ ARIADNA</div>
+<div class="reg">029 CORONEL TLACOXOLAL PRISCILA</div>
+<div class="reg">030 HUERTA ARAOS LEONARDO JOEL</div>
+<div class="reg">031 VAQUERO RODRIGUEZ JORGE MIGUEL</div>
+<div class="reg">032 SILVA VARGAS MARI GUADALUPE</div>
+<div class="reg">033 COCOYOTL OLIVAN JOYCE MONSERRAT</div>
+<div class="reg">034 NEGRETE GONZALEZ MELINA</div>
+<div class="reg">035 CEBADA GONZALEZ JOSE DANIEL</div>
+<div class="reg">036 VAZQUEZ RAMOS GUADALUPE</div>
+<div class="reg">037 DIAZ CHALINI JUAN JOSE</div>
+<div class="reg">038 GARCIA RAYON EDUARDO</div>
+<div class="reg">039 FLORES DE JESUS FLOR SELENE</div>
+<div class="reg">040 TEJEDA GONZALEZ ALEJANDRO</div>
+<div class="reg">041 MORALES GONZALEZ ESTELA</div>
+<div class="reg">042 BAROJAS VALENCIA JOSUE</div>
+<div class="reg">043 CALTENCO SOLIS LISSETT</div>
+<div class="reg">044 CARRETO BONILLA DAYN BRANDON</div>
+<div class="reg">045 MORALES NUÑEZ MARCO ANTONIO</div>
+<div class="reg">046 CUAUTLA PAVON DIANA KAREN</div>
+<div class="reg">047 FLORES IRIGOYE MAYDE</div>
+<div class="reg">048 SORIANO NIETO NANCY ESMERALDA</div>
+<div class="reg">049 RAMIREZ BAUTISTA YOSELIN</div>
+<div class="reg">050 PEREZ RAMIREZ ALEJANDRO</div>
+<div class="reg">051 FLORES MUÑOZ TOMAS EDUARDO</div>
+<div class="reg">052 GARCIA GARCIA ISMAEL</div>
+<div class="reg">053 CETINA MARTINEZ JOSE LUIS</div>
+<div class="reg">054 BALDERAS MARTINEZ MIGUEL</div>
+<div class="reg">055 LOPEZ CACIQUE CESAR</div>
+<div class="reg">056 TOXQUI SIMON ALHELI</div>
+<div class="reg">057 LEGORRETA RODRIGUEZ CARLOS HUMBERTO</div>
+<div class="reg">058 LUNA OTERO BRAYAN</div>
+<div class="reg">059 XOCHICALI MARTINEZ JESSICA</div>
+<div class="reg">060 FLORES PLATA LIDIA BETSAIDA</div>
+<div class="reg">061 LOZANO BOLAÑOS EDGAR MISAEL</div>
+<div class="reg">062 CORNEJO PONCE VICTOR</div>
+<div class="reg">063 PONCE MONTES FRANCISCO</div>
+<div class="reg">064 PEREZ TEPI GONZALO</div>
+<div class="reg">065 GONZALEZ ROMERO JUAN EDUARDO</div>
+<div class="reg">965 MORENO PEREZ EMMANUEL</div>
+<div class="reg">066 FLORES NUÑEZ BEATRIZ</div>
+<div class="reg">067 MONTES ESCORZA ROBERTO CARLOS</div>
+<div class="reg">967 FERNANDEZ MARTINEZ FABIANO</div>
+<div class="reg">068 PEREZ GUTIERREZ ESTEFANIA</div>
+<div class="reg">069 VALENCIA GOMEZ ALEX</div>
+<div class="reg">969 PEREZ ATENCO GABINO</div>
+<div class="reg">070 RODRIGUEZ MENDOZA ROBERTO CARLOS</div>
+<div class="reg">071 RAMIREZ BALEON ROBERTO</div>
+<div class="reg">072 BERRA MAZZOCCO VERONICA</div>
+<div class="reg">073 BERRA MAZZOCCO ALEJANDRO</div>
+<div class="reg">074 GARCIA CATARINO MARIA DE LOS ANGELES</div>
+<div class="reg">075 HERNANDEZ SORIANO ERIKA</div>
+<div class="reg">076 MANZANO TORRES RAUL</div>
+<div class="reg">077 HERNANDEZ RODRIGUEZ LUIS DANIEL</div>
+<div class="reg">078 HERRADA RODRIGUEZ LUIS ENRIQUE</div>
+<div class="reg">079 MORALES CORIO JORGE LUIS</div>
+<div class="reg">080 COYOTL TAPIA ARISBETH</div>
+<div class="reg">081 CAMPOS PEREZ ERICK</div>
+<div class="reg">082 LIMON FERNANDEZ MIGUEL ANGEL</div>
+<div class="reg">083 BERRA GUETA JOSE ALEJANDRO</div>
+<div class="reg">084 GALINDO FLORES SAID</div>
+<div class="reg">085 ORTEGA DOMINGUEZ GIOVANNI</div>
+<div class="reg">086 NIETO CRUZ LUIS DAVID</div>
+<div class="reg">087 AZANES MORALES LUIS ALBERTO</div>
+<div class="reg">088 FUENTES GARCIA MARCO ANTONIO</div>
+<div class="reg">089 DE LA LUZ FLORES MARIA MERCEDES</div>
+<div class="reg">090 VELEZ REYES JOSE OMAR</div>
+<div class="reg">091 DAVILA RODRIGUEZ MARCO ANTONIO</div>
+<div class="reg">092 HERRERA LUNA JAIR ADOLFO</div>
+<div class="reg">093 LOPEZ VAZQUEZ LUIS ALBERTO</div>
+<div class="reg">094 GARCIA NARANJO VANNESA GUADALUPE</div>
+<div class="reg">095 AGUILAR CHOLULA FERNANDO</div>
+<div class="reg">096 VARGAS PEREZ JOSE ALFREDO</div>
+<div class="reg">097 TELEZ FLORES ZARAHI</div>
+<div class="reg">098 GUZMAN MENDEZ BELEN</div>
+<div class="reg">099 CALDERON SANCHEZ ALEJANDRO</div>
+<div class="reg">100 ANICETO MARIN DAMARIS</div>
+<div class="reg">101 MEDELLIN BELMONT SERGIO</div>
+<div class="reg">102 LOPEZ CANTORAN LORENA</div>
+<div class="reg">103 CONTRERAS OLIVARES VANESA</div>
+<div class="reg">104 TORRES MENDOZA MIGUEL</div>
+<div class="reg">105 ROJAS QUINTERO LUIS PEDRO</div>
+<div class="reg">106 HERNANDEZ MORALES ABIGAIL</div>
+<div class="reg">107 CARDOSA CABRERA RUBEN</div>
+<div class="reg">108 TOCHIHUITL TREVIÑO GABRIELA</div>
+<div class="reg">109 XOXOTLA FLORES MARCO ANTONIO</div>
+<div class="reg">110 RAMIREZ HERNANDEZ RICARDO</div>
+<div class="reg">111 RAMIREZ ROSAS RICARDO</div>
+<div class="reg">112 SILVA BRITO JOSE ARMANDO</div>
+<div class="reg">113 LUNA MARTINEZ MAYBELLINE</div>
+<div class="reg">114 GONZALEZ JUAREZ EDUARDO</div>
+<div class="reg">115 FLORES AGUILAR MAYRA SUSANA</div>
+<div class="reg">116 CRUZ RUBIN LUIS EDUARDO</div>
+<div class="reg">117 FLORES ARENAS NAYELI</div>
+<div class="reg">118 LOZADA CISNEROS JOSE VICTOR</div>
+<div class="reg">119 AGUILAR PAREDES ROBERTO CARLOS</div>
+<div class="reg">120 LUNA PONCE ELIZABETH</div>
+<div class="reg">121 TORRES MORLAN JUAN CARLOS</div>
+<div class="reg">122 IBARRA ZEPADA VICTOR</div>
+<div class="reg">123 ROMERO LOPEZ GABRIELA</div>
+<div class="reg">124 HIDALGO LUNA CHARLY LEONARDO</div>
+<div class="reg">125 CARLOS QUIROZ MIGUEL TOBIAS</div>
+<div class="reg">126 VILLADA AGUILAR SILVIA</div>
+<div class="reg">127 SILVESTRE DORADO ULISES MOISES</div>
+<div class="reg">128 PEREZ MENES RAMIRO</div>
+<div class="reg">129 YBAÑEZ PEREZ ROEL</div>
+<div class="reg">130 FUENTES TORRES JANET</div>
+<div class="reg">131 CASTELLANOS POTRERO JOSE FRANCISCO</div>
+<div class="reg">132 PEREZ AVILES JOSE ALEJANDRO</div>
+<div class="reg">133 CABALLERO CARDOSO MARCO ANTONIO</div>
+<div class="reg">134 DE LA CRUZ TRUJILLO ESMERALDA SARAHI</div>
+<div class="reg">135 GOMEZ GARCIA NELLY MARLYN</div>
+<div class="reg">136 SUAREZ CASTILLO JERSON JARED</div>
+<div class="reg">137 ALVAREZ TEPEPA CRISTOBAL</div>
+<div class="reg">138 GUTIERREZ TORRES DIANA SELENA</div>
+<div class="reg">139 LIMON GALINDO EMMANUEL</div>
+<div class="reg">140 TEUTLE ESPINOZA MARCOS SAUL</div>
+<div class="reg">141 HERNANDEZ ROSAS GABRIELA</div>
+<div class="reg">142 BOLEGA ROMERO MARCO ANTONIO</div>
+<div class="reg">143 HERNANDEZ AMADO JOSE LUIS</div>
+<div class="reg">144 FLORES RAMIREZ OCTAVIO</div>
+<div class="reg">145 ALONSO BUSTOS ALDO</div>
+<div class="reg">146 BAUTISTA RAMIREZ JOSE HERIBERTO</div>
+<div class="reg">147 PONCE VELIZ HECTOR</div>
+<div class="reg">148 PONCE VELIZ DIANA</div>
+<div class="reg">149 CARRANZA CUAUTLE ALEJANDRA</div>
+<div class="reg">150 SANTOS CARRANZA SAUL</div>
+<div class="reg">151 ESCALONA JUANICO MARIO ALBERTO</div>
+<div class="reg">152 CASTRO BAROJAS ELI</div>
+<div class="reg">153 PAZ SERRANO LIZETH</div>
+<div class="reg">154 LUNA GONZALEZ ESMERALDA</div>
+<div class="reg">155 RAMIREZ PONCE FRANCELY</div>
+<div class="reg">156 HERNANDEZ PEREZ PEDRO</div>
+<div class="reg">157 SANCHEZ MORALES MELISSA</div>
+<div class="reg">158 SANCHEZ MORALES DAVID</div>
+<div class="reg">159 DEL ROSARIO ROSALES JOSE SANTIAGO</div>
+<div class="reg">160 ROSALES ESPINOZA JONATHAN ANTONIO</div>
+<div class="reg">161 FLORES PLATA NANCY</div>
+<div class="reg">162 LOPEZ FUENTES LUIS GERARDO</div>
+<div class="reg">163 GONZALEZ CALTENCO KARLA</div>
+<div class="reg">164 FABIAN XILOTL YESSICA</div>
+<div class="reg">165 REYES PONCE LAURA</div>
+<div class="reg">166 OCOTECATL VALENTE MARIA ISABEL</div>
+<div class="reg">167 ORDAZ ZAMBRANO LIZBETH</div>
+<div class="reg">168 NIEVES GONZALEZ JESSICA</div>
+<div class="reg">169 SOSA CUATECO PERLA</div>
+<div class="reg">170 SANCHEZ VICTORIA BRENDA</div>
+<div class="reg">171 MOLINA SEVILLA MARIA FERNANDA</div>
+<div class="reg">172 VARELA LIMON SAMUEL</div>
+<div class="reg">173 PEREZ SANCHEZ JOSE ANGEL</div>
+<div class="reg">174 GARCIA MONTES BERNARDINO</div>
+<div class="reg">175 ORTIZ PAREDES VENANCIO</div>
+<div class="reg">176 RUIZ GARCIA DAVID</div>
+<div class="reg">178 NIETO ZAMORA ARON</div>
+<div class="reg">180 MORANCHEL QUECHOL MIGUEL ANGEL</div>
+<div class="reg">182 MEDINA FLORES MIGUEL ANGEL</div>
+<div class="reg">183 SOTO FLORES ULISES</div>
+<div class="reg">184 DIAZ MORALES ANDREA</div>
+<div class="reg">185 ESPAÑA PEREZ MAYRA VERA</div>
+<div class="reg">186 RAMIREZ HERNANDEZ PABLO</div>
+<div class="reg">187 MENA LOPEZ ELIAS JOSAFAD</div>
+<div class="reg">188 PEREZ RAMIREZ ASBEL BENJAMIN</div>
+<div class="reg">189 ALVAREZ LOPEZ SINJI ALFREDO</div>
+<div class="reg">190 PAZ SERRANO LUCELI</div>
+<div class="reg">191 AHUEHUETL PEREZ HUMBERTO</div>
+<div class="reg">192 ROBLES MONTES JORDY EMMANUEL</div>
+<div class="reg">193 LOPEZ TORRES EDUARDO</div>
+<div class="reg">194 MARTINEZ SANCHEZ JAVIER</div>
+<div class="reg">195 RAMIREZ CILIA LUIS ALFONSO</div>
+<div class="reg">196 JIMENEZ CAMACHO CARLOS DANIEL</div>
+<div class="reg">197 TECALERO XELHUA ALEJANDRO</div>
+<div class="reg">198 PEREA ESCAMILLA BLANCA ESTELA</div>
+<div class="reg">199 ALVAREZ MELO JOSE RICARDO</div>
+<div class="reg">200 MONTES VARELA BILIULFO</div>
+<div class="reg">201 TECALERO JIMENEZ DULCE GRACIELA</div>
+<div class="reg">202 OCELOTL PONCE LAURA STEFANY</div>
+<div class="reg">203 FLORES GRANDE ULISES</div>
+<div class="reg">204 MENDEZ LAZCANO JOSE ANTONIO</div>
+<div class="reg">205 FLORES MENDEZ MARIA LUISA</div>
+<div class="reg">206 GONZALEZ TEPEPA ANA MICHEL</div>
+<div class="reg">207 VAZQUEZ MARTINEZ JORGE MIGUEL</div>
+<div class="reg">208 MOLINA RIVEROL JOSE GERARDO</div>
+<div class="reg">209 AGUILAR ROMERO VIBIANA</div>
+<div class="reg">210 AGUIRRE ARELLANO GUSTAVO ANGEL</div>
+<div class="reg">211 BERRA ESPEZZIA ANA GABRIELA</div>
+<div class="reg">212 TECALERO JIMENEZ IMELDA CONSUELO</div>
+<div class="reg">213 VALERA PEREZ ERENDIRA</div>
+<div class="reg">214 MORALES CORONA EDUARDO</div>
+<div class="reg">215 DIAZ TORRES JOSE RICARDO</div>
+<div class="reg">216 FLORES FLORES ZAIRA LESLIE</div>
+<div class="reg">217 LOPEZ CORTES MARCEL ABIGAIL</div>
+<div class="reg">218 HUERTA HERNANDEZ LUIS</div>
+<div class="reg">219 HUERTA HERNANDEZ JOSE HUGO</div>
+<div class="reg">220 AVILA ROSAS YULISA</div>
+<div class="reg">221 MENDEZ MENDEZ MONICA</div>
+<div class="reg">222 TEUTLE COYOTL BELEN</div>
+<div class="reg">223 SANTAMARIA ALONSO GUADALUPE</div>
+<div class="reg">224 MORA AGUILAR ADRIANA</div>
+<div class="reg">225 OTHON HIGUERA EMMANUEL</div>
+<div class="reg">226 ANDÉRICA MUÑOZ ELÍAS</div>
+<div class="reg">227 MENDEZ AGUILAR SAUL</div>
+<div class="reg">228 ORTIZ RAMIREZ ITZEL</div>
+<div class="reg">229 HIDALGO BENITEZ ASAEL</div>
+<div class="reg">230 HERNANDEZ CALDERON RICARDO</div>
+<div class="reg">231 GALLARDO TLELO YUNUE ZAYIL</div>
+<div class="reg">232 GARCIA GUTIERREZ ALONDRA GUADALUPE</div>
+<div class="reg">233 ROMERO CASTELLANO LUCERO</div>
+<div class="reg">234 VAZQUEZ VARELA ADRIAN</div>
+<div class="reg">235 VALDEZ NAVA JOSE ANTONIO</div>
+<div class="reg">236 ROMERO COMI FAUSTO</div>
+<div class="reg">237 CARRANZA CORPUS RODOLFO</div>
+<div class="reg">238 MARTINEZ POBLANO JESUS</div>
+<div class="reg">239 BUENO CLEMENTE GUADALUPE</div>
+<div class="reg">240 MARTINEZ BARRANCO CARLOS ANTONIO</div>
+<div class="reg">241 RAMIREZ GONZALEZ KEVIN</div>
+<div class="reg">242 RAMIREZ FLORES JOSE DE JESUS</div>
+<div class="reg">243 ZEPEDA ALONSO DENILSON</div>
+<div class="reg">244 MARTINEZ RIVERA JOSE MANUEL</div>
+<div class="reg">245 AGUILAR PAZ YAZMIN</div>
+<div class="reg">246 HERNANDEZ PAZ LEONARDO</div>
+<div class="reg">247 TEUTLE CEREZO CARLOS ARMANDO</div>
+<div class="reg">248 MUÑOZ CASCO CRISTIAN PAOLA</div>
+<div class="reg">249 TAMAYO MONTES ANGEL IGNACIO</div>
+<div class="reg">250 MENDEZ ALONSO JAIR OZIEL</div>
+<div class="reg">251 HUERTA CARVANTES GUSTAVO</div>
+<div class="reg">252 GONZALEZ MARTINEZ ANGELICA</div>
+<div class="reg">253 ROJAS MORALES MAURO DANIEL</div>
+<div class="reg">254 FLORES MORALES DELIA JOSELIN</div>
+<div class="reg">255 CARBAJAL CASTILLO AMANDO</div>
+<div class="reg">256 GORDIANO RAMIREZ CRISTINA GUADALUPE</div>
+<div class="reg">257 PONCE MAYORGA PATRICIA GUADALUPE</div>
+<div class="reg">258 GONZALEZ VILLEDA WILLY</div>
+<div class="reg">259 CONTRERAS ANTONIO DIANA FLOR</div>
+<div class="reg">260 CORONA ROSALES URIEL OBED</div>
+<div class="reg">261 CARRANZA HERNANDEZ FRANCISCO JAVIER</div>
+<div class="reg">262 MORENO AGUIRRE CASIMIRO</div>
+<div class="reg">263 JUAREZ HERNANDEZ MARCELA</div>
+<div class="reg">264 RANGEL GONZALEZ ALEXANDER</div>
+<div class="reg">265 FLORES ORTIZ LUCERO</div>
+<div class="reg">266 CONTRERAS LUNA CESAR SAUL</div>
+<div class="reg">267 LOPEZ GARCIA ROGELIO</div>
+<div class="reg">268 BENITEZ GONZALEZ LAURA</div>
+<div class="reg">269 OCELOTL ALONZO LORENA</div>
+<div class="reg">270 SOLIS ORTEGA RODRIGO</div>
+<div class="reg">271 GENIS TORRES KARINA</div>
+<div class="reg">272 LEYVA MONTES LUIS ANGEL</div>
+<div class="reg">273 MUÑOZ CORTES NORMA ALEJANDRA</div>
+<div class="reg">274 MERLO GURIDI ANDREA</div>
+<div class="reg">275 ARENAS MENDEZ FERNANDO ASSAEL</div>
+<div class="reg">276 OLIVARES GARCIA CASIMIRO</div>
+<div class="reg">277 HERRERA CORONA MARIA CECILIA</div>
+<div class="reg">278 SALAZAR SERRANO RICARDO DE JESUS</div>
+<div class="reg">279 ROMERO LIMA AMAURY</div>
+<div class="reg">280 SALAZAR VARGAS FREDDY BENONI</div>
+<div class="reg">281 GONZALEZ CLARO KEVIN DANIEL</div>
+<div class="reg">282 MORALES PEREZ NORBERTO JONATHAN</div>
+<div class="reg">283 HIDALGO LOPEZ MARIA FERNANDA</div>
+<div class="reg">284 OSORIO GONZALEZ YONY MANUEL</div>
+<div class="reg">285 ROMERO UZCANGA MARTHA PATRICIA</div>
+<div class="reg">286 RODRIGUEZ ZAMBRANO SERAFIN</div>
+<div class="reg">287 PEREZ OCHOA JOSE GUADALUPE</div>
+<div class="reg">288 OSORIO LEON LUIS DAVID</div>
+<div class="reg">289 HIDALGO SPEZZIA CARLA ANDREA</div>
+<div class="reg">290 ALVAREZ ROCHA JACOBO</div>
+<div class="reg">291 RAMIREZ PEREZ MARYSOL</div>
+<div class="reg">292 MORALES HUERTA MARIBEL</div>
+<div class="reg">293 RANGEL FLORES MARIA FELIX</div>
+<div class="reg">294 PEREZ CARRANZA OCTAVIO</div>
+<div class="reg">295 ALDANA PONCE ALEKS ADAN</div>
+<div class="reg">296 JUAREZ MORACHEL MARIA FERNANDA</div>
+<div class="reg">297 CONFESOR CASTILLO ALEXIS</div>
+
+</body>
