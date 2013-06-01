@@ -67,6 +67,7 @@ $(document).ready(function(e) {
 			case 'encontrar':
 			
 				var registro = formulario.children('input:eq(0)').val();
+				alert (registro);
 				loginConn(registro);
 	
 				break;	
