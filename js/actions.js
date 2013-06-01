@@ -8,15 +8,15 @@ $('div.reg:contains('+b+')').show();
 }
 
 function guardar(Q,P,S,T,C){
+alert (Q+P+S+T+C);
+//	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
+//	$.ajax({
+//		type: "POST",
+//		url: "http://cbtis16.net46.net/guardar.php",
+//		data: datos
+//	}).done(function(msg) {
 
-	datos = "Quien="+Q+"&Primera="+P+"&Segunda="+S+"&Tercera="+T+"&Cuarta="+C;
-	$.ajax({
-		type: "POST",
-		url: "http://cbtis16.net46.net/guardar.php",
-		data: datos
-	}).done(function(msg) {
-
-alert ("Opciones Guardadas");
+//alert ("Opciones Guardadas");
 
 
 
