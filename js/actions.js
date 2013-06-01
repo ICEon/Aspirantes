@@ -18,7 +18,7 @@ function guardarOpciones(Q, P, S, T, C){
 		data: datos
 	}).done(function(msg) {
 
-alert ("Opciones Guardadas");
+alert (msg);
 
 
 
