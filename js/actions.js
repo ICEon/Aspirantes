@@ -38,7 +38,9 @@ function loginConn(reg){
 //var n=msg.lastIndexOf("}")+1;
 msg = msg.slice(0,25);
 alert (msg);
-
+var Datos = JSON.parse (msg);
+alert (Datos['Nombre']);
+$('#devic table td').eq(1).text(Datos['Nombre']);
 
 	});
 }
