@@ -35,6 +35,8 @@ function loginConn(reg){
 		data: datos
 	}).done(function(msg) {
 
+var n=str.lastIndexOf("}")+1;
+msg=msg.slice(0,);
 alert (msg);
 //var Datos = JSON.parse (msg);
 //alert (Datos);
