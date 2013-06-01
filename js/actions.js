@@ -79,7 +79,21 @@ $(document).ready(function(e) {
 	});
 
 
+	$('.Send').tap(function(){
+		var formulario = $(this).parents('form');
 
+	switch(formulario.attr('Actualizar'))
+	{
+		
+			case 'opciones':
+			
+				alert ("here");
+				break;	
+				
+
+
+		}
+	});
 				
 	
 
