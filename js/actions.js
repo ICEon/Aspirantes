@@ -73,15 +73,22 @@ $(document).ready(function(e) {
 	
 				break;	
 				
-	}
-				$('.Actualizar').tap(function(){
+
+
+		}
+	});
+
+
+
+					$('.Actualizar').tap(function(){
 		var formulario = $(this).parents('form');
 
 	switch(formulario.attr('name'))
 	{
-				case 'opciones':
-							
-                var Quien = document.getElementById("Registro").value;
+		
+			case 'opciones':
+			
+				var Quien = document.getElementById("Registro").value;
 				var Primera = document.getElementByName("POpcion").value;
 				var Segunda = document.getElementByName("SOpcion").value;
 				var Tercera = document.getElementByName("TOpcion").value;
@@ -90,12 +97,12 @@ $(document).ready(function(e) {
 				guardar(Quien, Primera,Segunda,Tercera,Cuarta);
 	
 				break;	
+				
+
 
 		}
 	});
-
-
-			
+	
 
 
 
