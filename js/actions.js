@@ -74,7 +74,7 @@ $(document).ready(function(e) {
 				break;	
 				
 			case 'opciones':
-
+alert("op");
                 var Quien =  $("#registro").val();
 
 		var Primera = $("#POpcion").val();
@@ -82,7 +82,7 @@ $(document).ready(function(e) {
 						var Tercera = $("#TOpcion").val();
 								var Cuarta = $("#COpcion").val();
 								
-alert (Cuarta);
+
 				guardarOpciones(Quien, Primera, Segunda, Tercera, Cuarta);
 
 				break;	
