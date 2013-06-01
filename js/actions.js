@@ -72,7 +72,14 @@ $(document).ready(function(e) {
 				loginConn(registro);
 	
 				break;	
-							case 'opciones':
+				
+	}
+				$('.Actualizar').tap(function(){
+		var formulario = $(this).parents('form');
+
+	switch(formulario.attr('name'))
+	{
+				case 'opciones':
 							
                 var Quien = document.getElementById("Registro").value;
 				var Primera = document.getElementByName("POpcion").value;
