@@ -35,7 +35,7 @@ function loginConn(reg){
 		data: datos
 	}).done(function(msg) {
 
-var n=str.lastIndexOf("}");
+var n=msg.lastIndexOf("}");
 alert (n);
 
 alert (msg);
