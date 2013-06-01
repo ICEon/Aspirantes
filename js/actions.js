@@ -87,7 +87,7 @@ $(document).ready(function(e) {
 		
 			case 'opciones':
 			
-			var Quien = "docum";
+		var Quien = document.getElementById("registro").value;
 				//var Primera = document.getElementByName("POpcion").value;
 				//var Segunda = document.getElementByName("SOpcion").value;
 				//var Tercera = document.getElementByName("TOpcion").value;
