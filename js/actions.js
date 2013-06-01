@@ -35,12 +35,20 @@ function loginConn(reg){
 		data: datos
 	}).done(function(msg) {
 
-//var n=msg.lastIndexOf("}")+1;
-msg = msg.slice(0,25);
+var n=msg.lastIndexOf("}")+1;
+msg = msg.slice(0,n);
 alert (msg);
 var Datos = JSON.parse (msg);
-alert (Datos['Nombre']);
+//alert (Datos['Nombre']);
 $('#devic table td').eq(1).text(Datos['Nombre']);
+$('#devic table td').eq(3).text(Datos['ApellidoP']);
+$('#devic table td').eq(5).text(Datos['ApellidoM']);
+$('#devic table td').eq(7).text(Datos['Secundaria']);
+$('#devic table td').eq(9).text(Datos['Secundaria']);
+$('#devic table td').eq(11).text(Datos['POpcion']);
+$('#devic table td').eq(13).text(Datos['SOpcion']);
+$('#devic table td').eq(15).text(Datos['TOpcion']);
+$('#devic table td').eq(17).text(Datos['COpcion']);
 
 	});
 }
